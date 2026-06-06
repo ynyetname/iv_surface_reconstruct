@@ -129,6 +129,12 @@ Long-format Kaggle submission file:
 
 ---
 
+## Author
+
+**ynyetname** — [github.com/ynyetname](https://github.com/ynyetname)
+
+---
+
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
