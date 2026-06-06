@@ -87,13 +87,29 @@ tqdm>=4.65.0
 
 ## Usage
 
-Open and run the main notebook in `notebooks/`:
+### Full Reproduction (step by step)
+
+Run these commands in order to reproduce the results from scratch:
 
 ```bash
+# Step 1 — Clone and enter the repo
+git clone https://github.com/ynyetname/iv_surface_reconstruct.git
+cd iv_surface_reconstruct
+
+# Step 2 — Create and activate environment
+conda create -n iv_surface_reconstruct python=3.10 -y
+conda activate iv_surface_reconstruct
+
+# Step 3 — Install dependencies
+pip install -r requirements.txt
+
+# Step 4 — Launch the notebook
 jupyter notebook notebooks/iv_surface_reconstruct.ipynb
 ```
 
-The pipeline will:
+Once the notebook opens in your browser, go to **Kernel → Restart & Run All** to execute the full pipeline.
+
+### What the pipeline does
 1. Load raw options data from `RAW_CSV`
 2. Fill expiry day IVs using PCHIP interpolation
 3. Train an MLP on observed non-expiry IVs
